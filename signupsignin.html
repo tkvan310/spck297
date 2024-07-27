@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="signupsignin.css" />
   </head>
   <body>
+   
     <div class="container right-panel-active">
       <!-- Sign Up -->
       <div class="container__form container--signup">
-        <form action="home.html" class="form" id="form1">
+        <form action="#" class="form" id="signUp">
           <h2 class="form__title">Sign Up</h2>
-          <input type="text" placeholder="User" class="input" />
-          <input type="email" placeholder="Email" class="input" />
-          <input type="password" placeholder="Password" class="input" />
+          <input id="username" type="text" placeholder="User" class="input" />
+          <input id="emailSignUp" type="email" placeholder="Email" class="input" />
+          <input id="passwordSignUp"  type="password" placeholder="Password" class="input" />
+          <input id="rePassword" type="password" placeholder="Confirm your password" class="input"/>
           <button class="btn">Sign Up</button>
         </form>
       </div>
 
       <!-- Sign In -->
       <div class="container__form container--signin">
-        <form action="home.html" class="form" id="form2">
+        <form action="home.html" class="form" id="signIn">
           <h2 class="form__title">Sign In</h2>
-          <input type="email" placeholder="Email" class="input" />
-          <input type="password" placeholder="Password" class="input" />
+          <input id="emailSignIn" type="email" placeholder="Email" class="input" />
+          <input id="passwordSignIn" type="password" placeholder="Password" class="input" />
           <a href="#" class="link">Forgot your password?</a>
           <button class="btn">Sign In</button>
         </form>
@@ -34,19 +36,19 @@
       <div class="container__overlay">
         <div class="overlay">
           <div class="overlay__panel overlay--left">
-            <button class="btn" id="signIn">Sign In</button>
+            <button class="btn" id="signIn1">Sign In</button>
           </div>
           <div class="overlay__panel overlay--right">
-            <button class="btn" id="signUp">Sign Up</button>
+            <button class="btn" id="signUp1">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
     <script>
-      const signInBtn = document.getElementById("signIn");
-      const signUpBtn = document.getElementById("signUp");
-      const fistForm = document.getElementById("form1");
-      const secondForm = document.getElementById("form2");
+      const signInBtn = document.getElementById("signIn1");
+      const signUpBtn = document.getElementById("signUp1");
+      const fistForm = document.getElementById("signUp");
+      const secondForm = document.getElementById("signIn");
       const container = document.querySelector(".container");
 
       signInBtn.addEventListener("click", () => {
